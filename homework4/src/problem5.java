@@ -1,7 +1,12 @@
+import java.util.Scanner;
+
 public class problem5 {
     public static void main(String[] args) {
-        int i = 100, sum = 0;
-        while (i <= 200) {
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        int n = scanner.nextInt();
+        int sum = 0;
+        while (i <= n) {
             if (i % 9 != 0) {
                 i++;
                 continue;

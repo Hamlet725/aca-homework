@@ -11,13 +11,13 @@ public class problem11 {
                 break;
             }
             i++;
-        } if (n% i == 0) {
-            System.out.println("not prime");
         }
-        else if (n == 1) {
+        if (n % i == 0) {
+            System.out.println("Prime: " + n);
+        } else if (n == 1) {
             System.out.println("Not prime: " + n);
         } else {
-            System.out.println("Prime: " + n);
+            System.out.println("not prime");
         }
     }
 }

@@ -5,19 +5,19 @@ public class problem11 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input the number n:");
         int n = scanner.nextInt();
+        boolean isPrime = true;
         int i = 2;
         while (i < n) {
             if (n % i == 0) {
+                isPrime = false;
+                System.out.println("Not prime:");
                 break;
             }
             i++;
         }
-        if (n % i == 0) {
+        if (isPrime) {
             System.out.println("Prime: " + n);
-        } else if (n == 1) {
-            System.out.println("Not prime: " + n);
-        } else {
-            System.out.println("not prime");
+
         }
     }
 }

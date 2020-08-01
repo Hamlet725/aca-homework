@@ -1,22 +1,7 @@
 package old;
-
 import java.util.Scanner;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
-class batmen1 {
-    static class Point {
-        int x;
-        int y;
-
-        public Point(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
-
+class Batmen1 {
     static Point lt;
     static Point rb;
     static Point current;
@@ -93,5 +78,15 @@ class batmen1 {
         rb = new Point(rx, by);
 
         return new Point((rb.x + lt.x) / 2, (rb.y + lt.y) / 2);
+    }
+
+    static class Point {
+        int x;
+        int y;
+
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
     }
 }

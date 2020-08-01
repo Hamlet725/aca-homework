@@ -1,3 +1,4 @@
+package old;
 
 public class MyHashMap1 {
     private Node1[] table;
